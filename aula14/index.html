@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini-Projeto: Mostrar e Ocultar Conteúdo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Mini-Projeto: Mostrar e Ocultar Conteúdo</h1>
+
+    <section class="card">
+        <h2>Sobre a Empresa</h2>
+
+        <p class="conteudo">
+            Somos uma empresa focada em tecnologia, inovação e educação digital.
+            Atuamos no desenvolvimento de soluções modernas para a web.
+        </p>
+
+        <button onclick="mostrarConteudoSimples(this)">
+            Mostrar conteúdo
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>Perguntas Frequentes</h2>
+
+        <p>
+            Trabalhamos com cursos online focados em desenvolvimento web.
+        </p>
+
+        <div class="conteudo-extra">
+            <p>
+                Nossos cursos são atualizados constantemente com as tecnologias
+                mais utilizadas pelo mercado.
+            </p>
+
+            <p>
+                Oferecemos suporte, comunidade ativa e projetos práticos
+                para acelerar o aprendizado.
+            </p>
+
+            <button class="btn-secundario">
+                Entrar em contato
+            </button>
+        </div>
+
+        <button onclick="mostrarConteudoAvancado(this)">
+            Exibir mais
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
