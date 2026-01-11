@@ -1,26 +1,21 @@
-// Valor inicial do contador
+//Valor inicial do contador
 let contador = 0;
 
-// Seleciona o elemento que exibe o valor na tela
+//Seleciona o parágrafo que exibe o valor na tela no HTML
 const valorContador = document.querySelector('#valor-contador');
 
-
-// Função para aumentar o contador
+//Função usada para aumentar o contador
 function aumentar() {
-    contador++; // incrementa 1
-    valorContador.innerText = contador; // atualiza o valor na tela
+    contador++; //Incrementando\aumentando\somando um valor a mais
+    valorContador.innerText = contador; //InnerText atualiza o valor na tela, ele vai alterar o texto exibido dentro do elemento HTML
 }
 
-
-// Função para diminuir o contador
 function diminuir() {
-    contador--; // decrementa 1
-    valorContador.innerText = contador; // atualiza o valor na tela
+    contador--; //decrementando\diminuindo\reduzindo o valor do contador
+    valorContador.innerText = contador; //atualiza o valor na tela
 }
 
-
-// Função para resetar o contador
 function resetar() {
-    contador = 0; // volta para zero
-    valorContador.innerText = contador; // atualiza o valor na tela
+    contador = 0; //voltando para o zero
+    valorContador.innerText = contador; //atualiza o valor na tela
 }

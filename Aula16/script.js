@@ -1,9 +1,8 @@
-// Seleciona o body da página
+//Seleciona o body da página HTML
 const body = document.querySelector('body');
 
-// Função para alternar o tema
+//Função para alternar o tema
 function alternarTema() {
-
-    // Adiciona ou remove a classe "dark"
+//adiciona ou remove a class "dark"
     body.classList.toggle('dark');
 }
