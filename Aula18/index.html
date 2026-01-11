@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EROS FACULDADE | SITE OFICIAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">EROS FACULDADE</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section id="inicio" class="section">
+        <div class="texto">
+            <h2>Construa seu futuro conosco</h2>
+            <p>
+                Nossa instituição oferece cursos reconhecidos,
+                infraestrutura moderna e ensino de qualidade.
+            </p>
+        </div>
+        <img src="img-.jpg" alt="Campus">
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="cursos" class="section img-fundo">
+        
+        <div class="texto">
+            <h2>Nossos Cursos</h2>
+            <p>
+                Administração, Sistemas de Informação, Direito,
+                Engenharia e muito mais.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — INSCRIÇÃO -->
+    <section id="inscricao" class="section destaque">
+
+        <h2>Pré-inscrição em Curso Superior</h2>
+        <p>Preencha os dados para iniciar sua inscrição.</p>
+
+        <!-- Formulário -->
+        <div class="formulario">
+            <input type="text" id="nomeAluno" placeholder="Nome completo">
+
+            <select id="curso">
+                <option value="">Selecione o curso</option>
+                <option value="Administração">Administração</option>
+                <option value="Sistemas de Informação">Sistemas de Informação</option>
+                <option value="Direito">Direito</option>
+                <option value="Engenharia">Engenharia</option>
+            </select>
+
+            <select id="turno">
+                <option value="">Selecione o turno</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+
+            <button onclick="processarInscricao()">Enviar Inscrição</button>
+        </div>
+
+        <!-- Resultado -->
+        <div id="resultado"></div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 - Faculdade EROS | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

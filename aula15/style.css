@@ -1,0 +1,64 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do contador */
+.contador-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.contador-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Número do contador */
+#valor-contador {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+/* Área dos botões */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo dos botões */
+button {
+    width: 80px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #111a2d;
+    color: #fff;
+    transition: background 0.3s ease;
+    margin: 10px;
+}
+
+/* Efeito hover */
+button:hover {
+    background-color: #1e40af;
+}

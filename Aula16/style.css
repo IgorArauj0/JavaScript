@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TEMA CLARO (PADRÃO) */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Menu */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+/* Botão do header */
+header button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+}
+
+/* SESSÕES */
+
+main {
+    padding: 40px;
+}
+
+/* Sessão com layout lado a lado */
+.sessao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+/* Texto da sessão */
+.texto h2 {
+    margin-bottom: 15px;
+}
+
+.texto p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.texto button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/* Imagem */
+.imagem img {
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* CRIAÇÃO TEMA ESCURO */
+
+body.dark {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+/* Header no modo escuro */
+body.dark .header {
+    background-color: #2a2a2a;
+}
+
+/* Botões no modo escuro */
+body.dark button {
+    background-color: #16a34a;
+}

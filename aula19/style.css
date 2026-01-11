@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Login */
+.login-section {
+    max-width: 400px;
+    margin: 60px auto;
+    margin-bottom: 15rem;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Mensagem */
+#mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Área restrita */
+.area-restrita {
+    display: none;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #e2e8f0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
