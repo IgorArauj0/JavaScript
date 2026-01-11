@@ -8,16 +8,14 @@ const valorContador = document.querySelector('#valor-contador');
 // Função para aumentar o contador
 function aumentar() {
     contador++; // incrementa 1
-    valorContador.innerText = contador; // atualiza o valor na tela
+    valorContador.innerText = contador; // InnerText atualiza o valor na tela ele vai alterar o texto exibido dentro do elemento HTML
 }
-
 
 // Função para diminuir o contador
 function diminuir() {
     contador--; // decrementa 1
     valorContador.innerText = contador; // atualiza o valor na tela
 }
-
 
 // Função para resetar o contador
 function resetar() {
