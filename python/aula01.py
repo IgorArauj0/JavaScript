@@ -1,0 +1,1 @@
+print("Meu primeiro programa em Python!") #Imprime uma mensagem na tela
