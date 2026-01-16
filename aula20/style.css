@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0a2540;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #061a2f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Conteúdo */
+main {
+    padding: 40px;
+    display: grid;
+    gap: 30px;
+}
+
+.institucional {
+    background-color: #102f55;
+    padding: 8rem;
+    border-radius: 8px;
+}
+
+.educacao {
+    background-image: url(teacher-7096632_1280.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+}
+
+.content {
+    background-color: rgba(128, 128, 128, 0.471);
+    padding: 40px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+
+/* Botões */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1f6feb;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;/* Mantém o elemento fixo na tela, mesmo com rolagem */
+    inset: 0; /* Ocupa toda a área da tela (top, right, bottom, left = 0) */
+    background-color: rgba(0, 0, 0, 0.6); /* Cria o fundo escuro semi-transparente */
+    display: none; /* Esconde o overlay por padrão */
+}
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #102f55;
+    padding: 30px;
+    border-radius: 8px;
+    width: 420px;
+    display: none;
+}
+
+/* Ativo */
+.ativo {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #061a2f;
+    padding: 40px 30px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+copyright {
+    text-align: center;
+    font-size: 13px;
+}

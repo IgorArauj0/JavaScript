@@ -1,38 +1,52 @@
-// Função responsável por validar o login
+// Função responsável por validar o Login do usuário
 function realizarLogin() {
-
-    // Captura os valores digitados
+    //captura os valores dos campos de input
     const email = document.querySelector('#email').value;
+
+    //captura o valor do campo de senha
     const senha = document.querySelector('#senha').value;
 
-    // Seleciona elementos que serão manipulados
+    //seleciona o elemento onde a mensagem será exibida
     const mensagem = document.querySelector('#mensagem');
+
+   //seleciona a área restrita que será exibida após o login
     const areaRestrita = document.querySelector('#areaRestrita');
 
-    // Credenciais simuladas (exemplo real)
+    //credenciais simuladas para validação (do lado do cliente)
     const emailValido = 'aluno@faculdade.com';
-    const senhaValida = '123456';
+    const senhaValida = 'senha123';
 
-    // Validação de campos vazios
-    if (email.trim() === '' || senha.trim() === '') {
-        mensagem.innerText = 'Preencha todos os campos.';
-        mensagem.style.color = 'red';
-        return;
-    }
+    //trim() remove espaços em branco no início e no fim da string
+   if (email.trim() === '' || senha.trim() === '') { 
 
-    // Verifica se os dados estão corretos
-    if (email === emailValido && senha === senhaValida) {
+    //Exibe mensagem de erro se algum campo estiver vazio
+    mensagem.innerText = 'Por favor, preencha todos os campos.';
 
-        mensagem.innerText = 'Login realizado com sucesso!';
-        mensagem.style.color = 'green';
+    //define a cor da mensagem como vermelha
+    mensagem.style.color = 'red';
 
-        // Exibe a área restrita
-        areaRestrita.style.display = 'block';
+    return; //encerra a função
 
-    } else {
+}
 
-        // Mensagem de erro
-        mensagem.innerText = 'E-mail ou senha inválidos.';
-        mensagem.style.color = 'red';
-    }
+if(email === emailValido && senha === senhaValida) {
+
+    //Exibe mensagem de sucesso
+    mensagem.innerText = 'Login realizado com sucesso!';
+
+    //define a cor da mensagem como verde
+    mensagem.style.color = 'green';
+
+    //exibe a área restrita
+    areaRestrita.style.display = 'block'; 
+
+} else {
+
+    //Exibe mensagem de erro para credenciais inválidas
+    mensagem.innerText = 'Email ou senha inválidos. Tente novamente.';
+
+    //define a cor da mensagem como vermelha
+    mensagem.style.color = 'red';
+
+   }
 }

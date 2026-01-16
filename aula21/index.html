@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Faculdade EROS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Faculdade EROS</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Cursos</a>
+            <a href="#">Área do Aluno</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- Section 1 -->
+        <section class="institucional">
+            <h2>Curso de Sistemas de Informação</h2>
+
+            <!-- Tabs -->
+            <div class="tabs">
+
+                <!-- 
+    Ao clicar neste botão:
+    - chama a função abrirTab
+    - envia o evento do clique
+    - informa qual conteúdo deve ser exibido (id="curso")
+-->
+
+                <button class="tab ativo" onclick="abrirTab(event, 'curso')">
+                    Sobre o Curso
+                </button>
+
+
+
+                <button class="tab" onclick="abrirTab(event, 'grade')">
+                    Grade Curricular
+                </button>
+
+                <button class="tab" onclick="abrirTab(event, 'coordenacao')">
+                    Coordenação
+                </button>
+            </div>
+
+            <!-- Conteúdos -->
+            <div class="tab-conteudo ativo" id="curso">
+                <p>
+                    O curso de Sistemas de Informação forma
+                    profissionais preparados para o mercado
+                    de tecnologia e inovação.
+                </p>
+            </div>
+
+            <div class="tab-conteudo" id="grade">
+                <p>
+                    Algoritmos, Banco de Dados, Engenharia
+                    de Software, Redes e Segurança da Informação.
+                </p>
+            </div>
+
+            <div class="tab-conteudo" id="coordenacao">
+                <p>
+                    Coordenação: Prof. Dr. Carlos Andrade<br>
+                    Email: coordenacao@eros.edu.br
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="institucional">
+            <h2>Por que estudar na EROS?</h2>
+            <p>
+                Ensino de qualidade, professores qualificados
+                e infraestrutura moderna para sua formação.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Faculdade EROS</h4>
+                <p>Educação que transforma futuros.</p>
+            </div>
+
+            <div>
+                <h4>Institucional</h4>
+                <a href="#">Sobre</a><br>
+                <a href="#">Cursos</a><br>
+                <a href="#">Contato</a>
+            </div>
+
+            <div>
+                <h4>Atendimento</h4>
+                <p>Email: contato@eros.edu.br</p>
+                <p>Telefone: (11) 99999-9999</p>
+            </div>
+        </div>
+
+        <p class="copyright">
+            © 2026 Faculdade EROS — Todos os direitos reservados
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

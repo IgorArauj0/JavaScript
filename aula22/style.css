@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #1a237e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 30px;
+}
+
+.form-section {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: #1a237e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.resultado {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sucesso {
+    color: green;
+}
+
+.erro {
+    color: red;
+}
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

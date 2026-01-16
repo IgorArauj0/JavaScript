@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculdade EROS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Faculdade EROS</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Cursos</a>
+        <a href="#">Área do Aluno</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Seção 1 -->
+    <section class="institucional educacao">
+
+        <div class="content">
+        <h2>Comunicados Oficiais</h2>
+        <p>
+            Fique atento aos avisos acadêmicos
+            emitidos pela instituição.
+        </p>
+    </div>
+
+        <button onclick="abrirModalAviso()">
+            Ver comunicado
+        </button>
+    </section>
+
+    <!-- Seção 2 -->
+    <section class="institucional">
+        <h2>Calendário Acadêmico</h2>
+        <p>
+            Consulte as principais datas do
+            semestre letivo.
+        </p>
+
+        <button onclick="abrirModalCalendario()">
+            Ver calendário
+        </button>
+    </section>
+
+</main>
+
+
+
+<!-- /* O overlay serve para escurecer o fundo da página, bloquear interações e destacar o modal, permitindo fechar a janela ao clicar fora dela. */-->
+<div id="overlay" class="overlay" onclick="fecharModais()"></div>
+
+<!-- Modal 1 -->
+<div id="modalAviso" class="modal">
+    <h3>Aviso Institucional</h3>
+    <p>
+        O período de rematrícula estará disponível
+        até o dia 30 deste mês.
+    </p>
+
+    <button onclick="fecharModais()">Fechar</button>
+</div>
+
+<!-- Modal 2 -->
+<div id="modalCalendario" class="modal">
+    <h3>Calendário Acadêmico</h3>
+    <p>
+        Início das aulas: 05/08<br>
+        Provas finais: 20/11<br>
+        Encerramento do semestre: 30/11
+    </p>
+
+    <button onclick="fecharModais()">Fechar</button>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4>Faculdade EROS</h4>
+            <p>Educação que transforma futuros.</p>
+        </div>
+
+        <div>
+            <h4>Institucional</h4>
+            <a href="#">Sobre nós</a><br>
+            <a href="#">Cursos</a><br>
+            <a href="#">Contato</a>
+        </div>
+
+        <div>
+            <h4>Atendimento</h4>
+            <p>Email: contato@eros.edu.br</p>
+            <p>Telefone: (11) 99999-9999</p>
+        </div>
+    </div>
+
+    <p class="copyright">
+        © 2026 Faculdade EROS — Todos os direitos reservados
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

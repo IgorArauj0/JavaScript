@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0a2540;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #061a2f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Conteúdo */
+main {
+    padding: 40px;
+    display: grid;
+    gap: 30px;
+}
+
+.institucional {
+    background-color: #102f55;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #1e3a8a;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab.ativo {
+    background-color: #2563eb;
+}
+
+/* Conteúdos */
+/* Conteúdos das tabs */
+.tab-conteudo {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Conteúdo ativo */
+.tab-conteudo.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    height: auto;
+}
+
+
+/* Footer */
+footer {
+    background-color: #061a2f;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}

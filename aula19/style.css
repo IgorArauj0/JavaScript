@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
+    background-color: #022242;
     color: #333;
     width: 100vw;
     height: 100vh;
@@ -34,10 +34,11 @@ header nav a {
     max-width: 400px;
     margin: 60px auto;
     margin-bottom: 15rem;
-    background: white;
+    background: rgb(15, 15, 15);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
 
 .login-box {
@@ -45,6 +46,7 @@ header nav a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 10rem;
 }
 
 input {
@@ -55,7 +57,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #1d4ed8;
+    background-color: #031b5e;
     color: white;
     border: none;
     border-radius: 6px;

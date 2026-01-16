@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculdade EROS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Faculdade EROS</h1>
+    <p>Pré-inscrição em Cursos Superiores</p>
+</header>
+
+<main>
+
+    <!-- Section: Formulário -->
+    <section class="form-section">
+        <h2>Inscrição Acadêmica</h2>
+
+        <form onsubmit="validarFormulario(event)">
+            <input type="text" id="nome" placeholder="Nome completo">
+            <input type="email" id="email" placeholder="E-mail institucional">
+
+            <select id="curso">
+                <option value="">Selecione o curso</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="direito">Direito</option>
+                <option value="administracao">Administração</option>
+            </select>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+
+    <!-- Section: Retorno -->
+    <section class="resultado">
+        <p id="mensagem"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Faculdade EROS — Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
