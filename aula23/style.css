@@ -1,0 +1,97 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background-color: #1f2a44;
+    color: #fff;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo h1 {
+    font-size: 26px;
+}
+
+.logo span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* RELÓGIO */
+.relogio-container {
+    text-align: right;
+}
+
+.relogio-container span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#relogio {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+/* SECTIONS */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+.section-alt {
+    background-color: #f4f6f9;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    max-width: 500px;
+}
+
+.conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.conteudo p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.conteudo button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1f2a44;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* IMAGENS */
+.imagem img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1f2a44;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
