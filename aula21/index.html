@@ -29,13 +29,15 @@
             <!-- Tabs -->
             <div class="tabs">
 
-                <!-- 
-    Ao clicar neste botão:
-    - chama a função abrirTab
-    - envia o evento do clique
-    - informa qual conteúdo deve ser exibido (id="curso")
--->
+ <!-- 1 event
+                       - Representa o evento de clique
+                       - Permite identificar qual botão foi clicado
+                       - Usado no JS para aplicar a classe "ativo" na tab correta
 
+      2 'curso'
+                       - É uma string
+                       - Corresponde ao id do conteúdo que deve ser exibido
+                       - Neste caso: <div id="curso"> -->
                 <button class="tab ativo" onclick="abrirTab(event, 'curso')">
                     Sobre o Curso
                 </button>

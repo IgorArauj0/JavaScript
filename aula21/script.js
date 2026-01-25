@@ -1,39 +1,32 @@
 // Função responsável por controlar a troca de conteúdo das Tabs
+// É executada sempre que um botão (tab) é clicado
 function abrirTab(evento, idConteudo) {
 
-    /*document.querySelectorAll('.tab')
-           - Seleciona TODOS os botões que possuem a classe "tab"*/
+    /*Seleciona TODOS os botões com a classe "tab"
+        Retorna uma lista de elementos*/
     document.querySelectorAll('.tab').forEach(tab => {
-        /*forEach percorre cada item da lista, um por um
-                    Aqui, "tab" representa cada botão individual*/
+/*forEach percorre a lista de tabs. "tab" representa cada botão individual*/
 
-        tab.classList.remove('ativo');/*
-            Remove a classe "ativo" de todas as tabs
-            Isso garante que apenas uma tab fique ativa por vez*/
+        /*Remove a classe "ativo" de todas as tabs
+            Assim, nenhuma fica selecionada inicialmente*/
+        tab.classList.remove('ativo');
     });
 
-    /*
-        Seleciona TODOS os conteúdos das tabs
-        (cada bloco de texto correspondente a uma tab)
-    */
+    /*Seleciona TODOS os conteúdos das tabs
+        Cada conteúdo corresponde a um botão*/
     document.querySelectorAll('.tab-conteudo').forEach(conteudo => {
 
-        /*
-            Percorre cada conteúdo e remove a classe "ativo"
-            Assim, todos os conteúdos ficam ocultos
-        */
+        /*Percorre cada conteúdo
+        Remove a classe "ativo" para ocultar todos*/
         conteudo.classList.remove('ativo');
     });
 
-    /*
-        evento.target representa exatamente
-        o botão que o usuário clicou
-    */
+    /*evento.target representa exatamente
+        o botão que foi clicado pelo usuário*/
     evento.target.classList.add('ativo');
 
-    /*
-        Exibe apenas o conteúdo que corresponde
-        à tab clicada, usando o id recebido
-    */
+    /*Exibe apenas o conteúdo correto
+        idConteudo é o id enviado pelo botão no HTML*/
     document.getElementById(idConteudo).classList.add('ativo');
 }
+// O JavaScript primeiro desativa todas as tabs e conteúdos, depois ativa somente o botão clicado e exibe o conteúdo correspondente.
