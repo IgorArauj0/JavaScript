@@ -77,12 +77,12 @@ button {
     padding: 30px;
     border-radius: 8px;
     width: 420px;
-    display: none;
+    display: none; /* Esconde o modal por padrão */
 }
 
 /* Ativo */
 .ativo {
-    display: block;
+    display: block; /* Exibe o elemento quando a classe 'ativo' é adicionada */
 }
 
 /* Footer */

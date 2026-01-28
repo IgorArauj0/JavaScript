@@ -10,7 +10,6 @@ function abrirModalCalendario() {
     document.querySelector('#overlay').classList.add('ativo');
 }
 
-// Fecha qualquer modal aberto
 function fecharModais() {
     document.querySelector('#modalAviso').classList.remove('ativo');
     document.querySelector('#modalCalendario').classList.remove('ativo');
