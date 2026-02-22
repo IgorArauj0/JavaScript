@@ -69,6 +69,9 @@ function realizarLogin() {
     const emailValido = 'aluno@faculdade.com';
     const senhaValida = '123456';
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     // Verifica se algum campo está vazio
     // trim() remove os espaços em branco antes e depois do texto digitado
