@@ -12,11 +12,8 @@ body {
   /* Permite crescer verticalmente */
   min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  padding: 20px; /* Evita colar nas bordas no mobile */
+  padding: 5px; /* Evita colar nas bordas no mobile */
 }
 
 /* Container do gráfico */
@@ -28,7 +25,37 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.08);
   text-align: center;
+  margin-top: 1.8rem;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+background-color: cornflowerblue;
+color: white;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 1.5rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
 
 /* Responsividade Tablet */
 @media (max-width: 1024px) {
