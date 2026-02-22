@@ -1,0 +1,9 @@
+Type	Tipo de Gráfico
+"bar"	Gráfico de Barras
+"line"	Gráfico de Linha
+"pie"	Gráfico de Pizza
+"doughnut"	Pizza com furo
+"radar"	Gráfico Radar
+"polarArea"	Área Polar
+"bubble"	Gráfico de Bolhas
+"scatter"	Dispersão (X e Y)
