@@ -1,42 +1,84 @@
-// O evento DOMContentLoaded garante que todo o HTML foi carregado
-// antes de o JavaScript começar a executar.
+// O evento DOMContentLoaded é disparado quando todo o HTML da página
+// já foi carregado e convertido em elementos DOM pelo navegador.
+// Isso garante que o JavaScript só será executado depois que
+// todos os elementos da página existirem na memória.
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Seleciona o formulário pelo ID definido no HTML
+    // Aqui estamos selecionando o formulário da página.
+    // O método getElementById busca um elemento HTML pelo atributo "id".
+    // No nosso caso ele procura pelo formulário que possui:
+    // id="campoFormulario"
     const formulario = document.getElementById("campoFormulario");
 
 
-    // Escuta o evento de envio (submit) do formulário
+    // Agora adicionamos um "ouvinte de evento" ao formulário.
+    // Esse evento será executado sempre que o usuário tentar enviar
+    // o formulário (clicando no botão Enviar).
     formulario.addEventListener("submit", function (event) {
 
-        // Antes de validar novamente, limpamos todas as mensagens de erro antigas
+        // PRIMEIRA ETAPA DA VALIDAÇÃO
+        // ----------------------------------------------------
+        // Antes de validar novamente os campos do formulário,
+        // precisamos limpar todas as mensagens de erro que já
+        // foram exibidas anteriormente.
+        //
+        // Isso evita que mensagens antigas permaneçam na tela
+        // quando o usuário tentar enviar o formulário novamente.
         resetarMensagensDeErro();
 
 
-        // Verifica se todos os campos obrigatórios foram preenchidos
+        // SEGUNDA ETAPA DA VALIDAÇÃO
+        // ----------------------------------------------------
+        // Aqui chamamos a função responsável por verificar se
+        // todos os campos obrigatórios foram preenchidos.
+        //
+        // Essa função retorna:
+        // O operador "!" significa NEGAÇÃO LÓGICA.
+        // "Se os campos NÃO forem válidos"
+        // true  -> se todos os campos estiverem preenchidos
+        // false -> se algum campo estiver vazio
         if (!validarCamposObrigatorio()) {
 
-            // Caso exista erro, impede o envio do formulário
+            // Se a função retornar FALSE, significa que existem
+            // campos obrigatórios vazios.
+            //
+            // Nesse caso usamos "preventDefault()" para impedir
+            // que o formulário seja enviado ao servidor.
+            //
+            // Isso permite que o usuário veja os erros e corrija
+            // as informações antes de tentar enviar novamente.
             event.preventDefault();
         }
 
 
-        // Verifica se a senha e a confirmação de senha são iguais
+        // TERCEIRA ETAPA DA VALIDAÇÃO
+        // ----------------------------------------------------
+        // Aqui verificamos se o valor digitado no campo de senha
+        // é igual ao valor digitado no campo de confirmação de senha.
+        //
+        // Essa função também retorna:
+        // true  -> se as senhas forem iguais
+        // false -> se as senhas forem diferentes
         if (!compararValores()) {
 
-            // Se forem diferentes, também impede o envio
+            // Se as senhas não coincidirem, o envio do formulário
+            // também será bloqueado.
+            //
+            // Assim o usuário será obrigado a corrigir a senha
+            // antes de conseguir enviar o formulário.
             event.preventDefault();
         }
 
     });
 
+});
 
 
-    // ------------------------------------------------------------
+
     // FUNÇÃO: validarCamposObrigatorio
     // Verifica se todos os campos com a classe "obrigatorio"
     // possuem algum valor digitado
-    // ------------------------------------------------------------
+
     function validarCamposObrigatorio() {
 
         // Seleciona todos os elementos que possuem a classe "obrigatorio"
@@ -66,12 +108,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-
-    // ------------------------------------------------------------
+  
     // FUNÇÃO: compararValores
     // Verifica se o valor digitado nos campos de senha
     // e confirmação de senha são iguais
-    // ------------------------------------------------------------
+  
     function compararValores() {
 
         // Seleciona os campos de senha
@@ -92,12 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-
-    // ------------------------------------------------------------
     // FUNÇÃO: exibirErro
     // Responsável por mostrar a mensagem de erro
     // abaixo do campo que apresentou problema
-    // ------------------------------------------------------------
+    
     function exibirErro(elemento, mensagem) {
 
         // Busca o elemento que contém a mensagem de erro
