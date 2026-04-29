@@ -1,37 +1,31 @@
-//Buscar vincular o Link da Biblioteca
-//Mostrar Site Oficial: https://www.chartjs.org/docs/latest/getting-started/
+//Biblioteca Chart.js é a classe principal da biblioteca Chart.js, responsável por criar e gerenciar gráficos. Ele é utilizado para instanciar um novo gráfico em um elemento HTML, como um canvas, e configurar suas propriedades, como tipo de gráfico, dados e opções de exibição.
 
+//Pegamos o elemento canvas pelo ID
+const canvas = document.getElementById('graficoBarra'); 
 
-// Pegamos o elemento canvas pelo ID
-const canvas = document.getElementById("graficoBarra");
+//Criamos um novo gráfico
+ new Chart(canvas, {
 
-// Criamos um novo gráfico
-new Chart(canvas, {
+   //Tipo do gráfico
+   type: 'polarArea', 
 
-  // Tipo do gráfico
-  type: "polarArea", // line
+   //Dados do gráfico
+   data: {
 
+    //Nomes que aparecerão na parte inferior do gráfico
+     labels: ['JavaScript', 'React', 'Python'],
 
-  // Dados que serão exibidos
-  data: {
+     //Valores que aparecerão dentro do gráfico
+     datasets: [{
+        //Nome da Leganda
+        label: 'Linguagens mais usadas',
 
-    // Nomes que aparecem na parte inferior
-    labels: ["JavaScript", "Python", "React"],
+        //Quantidade de alunos em cada Linguagem
+        data: [40, 30, 30],
 
-    datasets: [{
+        //Cores de cada parte do gráfico
+        backgroundColor: ["black", "green", "blue"]
+     }]
+   }
 
-      // Nome da legenda
-      label: "Alunos Matriculados",
-
-      // Quantidade de alunos
-      data: [40, 30, 30],
-
-      // Cor das barras
-      backgroundColor: ["black", "green", "orange"]
-
-    }]
-  }
-
-
-
-});
+ });
