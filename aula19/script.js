@@ -1,6 +1,8 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // Função responsável por validar o Login do usuário
 function realizarLogin() {
     //captura os valores dos campos de input
@@ -83,11 +85,51 @@ function realizarLogin() {
     const areaRestrita = document.querySelector('#areaRestrita');
 
 >>>>>>> Stashed changes
+=======
+// Função responsável por validar o login do usuário
+function realizarLogin() {
+
+    // Captura o valor digitado no campo de e-mail
+    const email = document.querySelector('#email').value;
+
+    // Captura o valor digitado no campo de senha
+    const senha = document.querySelector('#senha').value;
+
+    // Seleciona o elemento onde as mensagens serão exibidas
+    const mensagem = document.querySelector('#mensagem');
+
+    // Seleciona a área restrita que será exibida após o login
+    const areaRestrita = document.querySelector('#areaRestrita');
+
+>>>>>>> Stashed changes
+=======
+// Função responsável por validar o login do usuário
+function realizarLogin() {
+
+    // Captura o valor digitado no campo de e-mail
+    const email = document.querySelector('#email').value;
+
+    // Captura o valor digitado no campo de senha
+    const senha = document.querySelector('#senha').value;
+
+    // Seleciona o elemento onde as mensagens serão exibidas
+    const mensagem = document.querySelector('#mensagem');
+
+    // Seleciona a área restrita que será exibida após o login
+    const areaRestrita = document.querySelector('#areaRestrita');
+
+>>>>>>> Stashed changes
     // Credenciais simuladas para validação (exemplo didático)
     const emailValido = 'aluno@faculdade.com';
     const senhaValida = '123456';
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
